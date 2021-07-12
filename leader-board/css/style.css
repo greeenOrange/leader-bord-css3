@@ -6,15 +6,19 @@ html,body{
 }
 main{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+article{
+    display: flex;
+    justify-content: center;
 }
 .container{
     width: 870px;
     max-width: 100%;
     background-color: #fff;
     padding: 0 .5rem
+    
 }
 .first-container{
     
@@ -86,3 +90,78 @@ margin-left: 1rem;
     color: #562EFF;
     text-decoration: none;
 }
+.course-banner{
+    width: 190px;
+    height: 130px;
+}
+.course-banner img{
+    width: 100%;
+    height: 100%;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 9rem; */
+}
+.course img{
+    border-radius: 1rem;
+}
+.course-details
+.course-info{
+ width: 100%;
+
+}
+.course-info >  h3{
+    width: 180px;
+}
+.course-info .fas{
+    color: gold;
+}
+#red-bg{
+    background-color: #FF4A60;
+    border-radius: 1rem;
+}
+span{
+    padding: 0rem 0.4rem
+}
+/* Selects any <p> that is the last element
+   among its siblings */
+   .fas:last-child {
+    color: #9F9F9F;
+  }
+
+  @media only screen and (max-width:668px){
+      .container{
+          width:100%;
+      }
+      .players, .blogs,.courses{
+          grid-template-columns: repeat(1,1fr);
+          gap: 1rem;
+          padding: 0 2rem
+      }
+      .player{
+          flex-direction: column;
+          align-items: baseline;
+          padding:0;
+      }
+      .player > h3{
+          margin:0;
+      }
+      h1{
+      
+        padding: 0 2.3rem;
+        
+      }
+      .blog{
+          display: block;
+          margin: auto;
+      }
+      .course-info >p > span{
+          display: flex;
+          justify-content: center;
+      }
+      #red-bg{
+          display: inline-block;
+          margin: 0 3rem;
+      }
+  }
