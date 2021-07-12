@@ -7,6 +7,8 @@ html,body{
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .first-container{
@@ -14,7 +16,7 @@ main{
     max-width: 100%;
     background-color: #fff;
 }
-.first-container > h1{
+h1{
     justify-content: flex-start;
     padding: 0 2.5em;
     color: #562EFF;
@@ -41,4 +43,41 @@ main{
 }
 .player h3{
    margin: auto 1rem;
+}
+hr{
+    border: 1px solid #D1D1D1;
+  
+}
+.second-content{
+    width: 870px;
+    max-width: 100%;
+    background-color: #fff;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 30px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+
+.blog-img{
+    width: 190px;
+    height: 130px;
+}
+.blog img{
+    width: 100%;
+    height: 100%;
+}
+.blog-details{
+margin-left: 1rem;
+}
+.blog-details p{
+    color:#9F9F9F;
+}
+.blog-details a{
+    color: #562EFF;
+    text-decoration: none;
 }
