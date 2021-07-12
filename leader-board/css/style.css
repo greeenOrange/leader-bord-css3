@@ -10,15 +10,18 @@ main{
     flex-direction: column;
     align-items: center;
 }
-
-.first-container{
+.container{
     width: 870px;
     max-width: 100%;
     background-color: #fff;
+    padding: 0 .5rem
+}
+.first-container{
+    
 }
 h1{
     justify-content: flex-start;
-    padding: 0 2.5em;
+    padding: 0 .8rem;
     color: #562EFF;
 }
 .players{
@@ -30,7 +33,6 @@ h1{
     display: flex;
     margin: auto 1rem;
    align-items: center;
-   justify-content: center;
    padding-bottom: 2rem;
 }
 .player img{
@@ -60,7 +62,10 @@ hr{
 }
 .blog{
     display: flex;
-    align-items: center;
+    margin: auto 1rem;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 2rem;
 }
 
 .blog-img{
